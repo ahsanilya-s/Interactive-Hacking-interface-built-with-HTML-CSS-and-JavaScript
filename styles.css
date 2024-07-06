@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #111;
+    padding: 20px;
+    border: 2px solid lime;
+    box-shadow: 0 0 10px lime;
+}
+
+.header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lime;
+    padding-bottom: 10px;
+}
+
+.console {
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid lime;
+    padding: 10px;
+    background-color: black;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blinking-cursor {
+    font-weight: bold;
+    font-size: 18px;
+    color: lime;
+    animation: blink 1s step-start infinite;
+}
